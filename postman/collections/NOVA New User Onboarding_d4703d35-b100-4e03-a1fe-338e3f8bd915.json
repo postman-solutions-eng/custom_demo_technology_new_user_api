@@ -1,0 +1,1327 @@
+{
+	"info": {
+		"_postman_id": "889bfee8-41ca-4859-b003-58cde599ae6f",
+		"name": "NOVA New User Onboarding",
+		"description": "This collection documentation is published and publically accessible at [docs.postmansolutions.com](https://docs.postmansolutions.com)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "accounts",
+			"item": [
+				{
+					"name": "{account Number}",
+					"item": [
+						{
+							"name": "statement",
+							"item": [
+								{
+									"name": "Latest",
+									"id": "dbe90eff-c987-4810-807b-c110c93906c2",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/accounts/:accountNumber/statement/latest",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"accounts",
+												":accountNumber",
+												"statement",
+												"latest"
+											],
+											"variable": [
+												{
+													"id": "0e27b753-44da-4ccd-85c8-be785bc9ff7b",
+													"key": "accountNumber",
+													"value": "do pariatur fugiat esse",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "98b6dea1-db64-452d-9c45-4635132248f6",
+											"name": "response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/accounts/:accountNumber/statement/latest",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"accounts",
+														":accountNumber",
+														"statement",
+														"latest"
+													],
+													"variable": [
+														{
+															"key": "accountNumber",
+															"value": "do pariatur fugiat esse",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "\"{\\n    \\\"period\\\": \\\"latest\\\",\\n    \\\"balance\\\": {\\n        \\\"opening\\\": 592.00,\\n        \\\"closing\\\": 850.86\\n    },\\n    \\\"money\\\": {\\n        \\\"in\\\": 738.29,\\n        \\\"out\\\": 166.95\\n    },\\n    \\\"transactions\\\": [\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 03:12:59 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Schroeder LLC\\\",\\n            \\\"type\\\": \\\"invoice\\\",\\n            \\\"amount\\\": 472.23,\\n            \\\"balance\\\": 975.82\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 07:25:47 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Douglas LLC\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 579.54,\\n            \\\"balance\\\": 478.19\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 03:15:25 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Schimmel, Veum and Ernser\\\",\\n            \\\"type\\\": \\\"payment\\\",\\n            \\\"amount\\\": 183.96,\\n            \\\"balance\\\": 930.73\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 10:23:17 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Haley, Gislason and Yundt\\\",\\n            \\\"type\\\": \\\"invoice\\\",\\n            \\\"amount\\\": 41.48,\\n            \\\"balance\\\": 725.33\\n        },\\n        {\\n            \\\"date\\\": \\\"Mon Nov 01 2021 22:39:10 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Harris, Hegmann and Sawayn\\\",\\n            \\\"type\\\": \\\"deposit\\\",\\n            \\\"amount\\\": 879.64,\\n            \\\"balance\\\": 646.98\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 01:31:45 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Jacobson, Monahan and Roberts\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 582.72,\\n            \\\"balance\\\": 849.03\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 19:06:42 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Vandervort Group\\\",\\n            \\\"type\\\": \\\"invoice\\\",\\n            \\\"amount\\\": 12.65,\\n            \\\"balance\\\": 522.66\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 03:08:30 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Smitham LLC\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 279.13,\\n            \\\"balance\\\": 781.56\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 03:46:15 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Moore LLC\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 723.63,\\n            \\\"balance\\\": 544.53\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 04:53:24 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Predovic - Ferry\\\",\\n            \\\"type\\\": \\\"invoice\\\",\\n            \\\"amount\\\": 673.55,\\n            \\\"balance\\\": 638.57\\n        }\\n    ]\\n}\""
+										}
+									]
+								},
+								{
+									"name": "Date",
+									"id": "2375daa9-b044-43ef-802a-e940674e59c8",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json; charset=utf-8"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/accounts/:accountNumber/statement/date",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"accounts",
+												":accountNumber",
+												"statement",
+												"date"
+											],
+											"variable": [
+												{
+													"id": "183c07f1-c903-4bae-be9d-bc2023fd55e7",
+													"key": "accountNumber",
+													"value": "do pariatur fugiat esse",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "22e355a5-204d-449f-8831-1f2a86562ae3",
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/accounts/:accountNumber/statement/date",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"accounts",
+														":accountNumber",
+														"statement",
+														"date"
+													],
+													"variable": [
+														{
+															"key": "accountNumber",
+															"value": "do pariatur fugiat esse",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"key": "Date",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "Transfer-Encoding",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "Connection",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "Server",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "x-srv-trace",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "x-srv-span",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "Access-Control-Allow-Origin",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "X-RateLimit-Limit",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "X-RateLimit-Remaining",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "X-RateLimit-Reset",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "ETag",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "Vary",
+													"value": "",
+													"description": ""
+												},
+												{
+													"disabled": false,
+													"key": "Content-Encoding",
+													"value": "",
+													"description": ""
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "\"{\\n    \\\"period\\\": {\\n        \\\"from\\\": \\\"Mon Sep 20 2021 16:52:45 GMT-0400 (Eastern Daylight Time)\\\",\\n        \\\"to\\\": \\\"Tue Nov 02 2021 15:13:01 GMT-0400 (Eastern Daylight Time)\\\"\\n    },\\n    \\\"balance\\\": {\\n        \\\"opening\\\": 852.93,\\n        \\\"closing\\\": 659.37\\n    },\\n    \\\"money\\\": {\\n        \\\"in\\\": 162.03,\\n        \\\"out\\\": 416.14\\n    },\\n    \\\"transactions\\\": [\\n        {\\n            \\\"date\\\": \\\"Mon Nov 01 2021 21:22:46 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Rutherford, Kuhn and Davis\\\",\\n            \\\"type\\\": \\\"payment\\\",\\n            \\\"amount\\\": 550.45,\\n            \\\"balance\\\": 812.41\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 17:54:35 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Steuber, Bosco and Aufderhar\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 352.28,\\n            \\\"balance\\\": 805.94\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 00:32:22 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Murray, Lind and Conn\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 750.29,\\n            \\\"balance\\\": 380.53\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 16:08:41 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Ortiz - Strosin\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 907.48,\\n            \\\"balance\\\": 911.39\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 01:54:43 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Lockman - Abbott\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 488.83,\\n            \\\"balance\\\": 27.05\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 20:56:06 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Thiel, Labadie and Fay\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 699.06,\\n            \\\"balance\\\": 494.85\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 01:03:02 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Mosciski - Rutherford\\\",\\n            \\\"type\\\": \\\"invoice\\\",\\n            \\\"amount\\\": 709.30,\\n            \\\"balance\\\": 280.79\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 06:03:08 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Gaylord and Sons\\\",\\n            \\\"type\\\": \\\"deposit\\\",\\n            \\\"amount\\\": 948.75,\\n            \\\"balance\\\": 410.76\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 11:01:22 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Heaney LLC\\\",\\n            \\\"type\\\": \\\"withdrawal\\\",\\n            \\\"amount\\\": 226.07,\\n            \\\"balance\\\": 562.89\\n        },\\n        {\\n            \\\"date\\\": \\\"Tue Nov 02 2021 05:15:39 GMT-0400 (Eastern Daylight Time)\\\",\\n            \\\"description\\\": \\\"Torphy Inc\\\",\\n            \\\"type\\\": \\\"payment\\\",\\n            \\\"amount\\\": 848.31,\\n            \\\"balance\\\": 402.62\\n        }\\n    ]\\n}\""
+										}
+									]
+								}
+							],
+							"id": "4ce2b53c-d122-4cbd-9a4a-5b0581d286bd"
+						},
+						{
+							"name": "Overview",
+							"id": "0efa7e59-35ec-4d15-bd26-5b370e33b76a",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/accounts/:accountNumber/overview",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"accounts",
+										":accountNumber",
+										"overview"
+									],
+									"variable": [
+										{
+											"id": "d723867f-0564-4836-b1bb-a29cb366a080",
+											"key": "accountNumber",
+											"value": "do pariatur fugiat esse",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "2ca4fc3d-bd3c-47fe-9ec7-3ad2b0be19dd",
+									"name": "response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/accounts/:accountNumber/overview",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"accounts",
+												":accountNumber",
+												"overview"
+											],
+											"variable": [
+												{
+													"key": "accountNumber",
+													"value": "do pariatur fugiat esse",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "\"{\\n    \\\"type\\\": \\\"Personal Loan Account\\\",\\n    \\\"balance\\\": {\\n        \\\"available\\\": 632.22,\\n        \\\"present\\\": 339.71\\n    },\\n    \\\"details\\\": {\\n        \\\"domestic\\\": {\\n            \\\"account\\\": \\\"49114539\\\",\\n            \\\"routing\\\": \\\"11252386\\\"\\n        },\\n        \\\"international\\\": {\\n            \\\"bic\\\": \\\"GBHULVJ1\\\",\\n            \\\"iban\\\": \\\"CH8572759176K0032S830\\\"\\n        }\\n    },\\n    \\\"interestRate\\\": 0.01,\\n    \\\"lastStatementDate\\\": \\\"Tue Nov 02 2021 10:12:14 GMT-0400 (Eastern Daylight Time)\\\"\\n}\""
+								}
+							]
+						}
+					],
+					"id": "0047748f-662d-47b0-9706-1d6d087bf2fc"
+				},
+				{
+					"name": "Create",
+					"id": "a0164f26-9fed-43a5-8edf-b3425325759d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"type\": \"Checking Account\",\n  \"holder\": \"{{customerId}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/accounts/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"accounts",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "1d3a35ed-6e8e-4c10-a074-ad04c2f1a99f",
+							"name": "response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"type\": \"Checking Account\",\n  \"holder\": \"{{customerId}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/accounts/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"accounts",
+										"create"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"type\": \"Savings Account\",\n  \"details\": {\n    \"domestic\": {\n      \"account\": \"16088994\",\n      \"routing\": \"84768721\"\n    },\n    \"international\": {\n      \"bic\": \"RLOOLSY1\",\n      \"iban\": \"LB417006B8554854OI3499112308\"\n    }\n  }\n}"
+						}
+					]
+				}
+			],
+			"id": "49a981b8-d010-4c69-adf3-d082d7949e7b"
+		},
+		{
+			"name": "payments/{account Number}",
+			"item": [
+				{
+					"name": "payees",
+					"item": [
+						{
+							"name": "List",
+							"id": "e4c9bbc8-1676-4c43-9047-e7f44212ed1b",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/payments/:accountNumber/payees",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										":accountNumber",
+										"payees"
+									],
+									"variable": [
+										{
+											"id": "a609b46f-cdc9-4673-b46f-aed5a2fe76cc",
+											"key": "accountNumber",
+											"value": "do pariatur fugiat esse",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "7c9c1e45-02cc-476d-b41a-59d6da8d03be",
+									"name": "response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/payments/:accountNumber/payees",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"payments",
+												":accountNumber",
+												"payees"
+											],
+											"variable": [
+												{
+													"key": "accountNumber",
+													"value": "do pariatur fugiat esse",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "\"[\\n    {\\n        \\\"name\\\": \\\"Alejandro Reichert\\\",\\n        \\\"checking\\\": 49519513,\\n        \\\"routing\\\": 41858408\\n    },\\n    {\\n        \\\"name\\\": \\\"Sandy Funk\\\",\\n        \\\"checking\\\": 89056703,\\n        \\\"routing\\\": 49713129\\n    },\\n    {\\n        \\\"name\\\": \\\"Aaron Metz\\\",\\n        \\\"checking\\\": 09806437,\\n        \\\"routing\\\": 55100334\\n    },\\n    {\\n        \\\"name\\\": \\\"Darrell Bauch\\\",\\n        \\\"checking\\\": 85125097,\\n        \\\"routing\\\": 09173516\\n    },\\n    {\\n        \\\"name\\\": \\\"Isaac Feil\\\",\\n        \\\"checking\\\": 20270828,\\n        \\\"routing\\\": 35365127\\n    },\\n    {\\n        \\\"name\\\": \\\"Leigh Rohan\\\",\\n        \\\"checking\\\": 90142633,\\n        \\\"routing\\\": 00431026\\n    },\\n    {\\n        \\\"name\\\": \\\"Melody Ryan\\\",\\n        \\\"checking\\\": 43478216,\\n        \\\"routing\\\": 23899846\\n    },\\n    {\\n        \\\"name\\\": \\\"Howard Gorczany\\\",\\n        \\\"checking\\\": 22511905,\\n        \\\"routing\\\": 01385400\\n    },\\n    {\\n        \\\"name\\\": \\\"Rudy Hackett\\\",\\n        \\\"checking\\\": 56305325,\\n        \\\"routing\\\": 27537298\\n    },\\n    {\\n        \\\"name\\\": \\\"Denise Corkery\\\",\\n        \\\"checking\\\": 90846626,\\n        \\\"routing\\\": 84234984\\n    }\\n]\""
+								}
+							]
+						},
+						{
+							"name": "Add",
+							"id": "eed1c8cd-fd8e-48cc-9d3a-b8e12e87b846",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/plain"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"{\\n    \\\"name\\\": \\\"Andrea Harber\\\",\\n    \\\"checking\\\": 63436544,\\n    \\\"routing\\\": 67511746\\n}\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/payments/:accountNumber/payees/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										":accountNumber",
+										"payees",
+										"add"
+									],
+									"variable": [
+										{
+											"id": "68330d75-9ca4-46a0-9199-8b83e77c5b07",
+											"key": "accountNumber",
+											"value": "do pariatur fugiat esse",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "85c2b80f-e9d6-4d9f-be58-415596b31e5f",
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"{\\n    \\\"name\\\": \\\"Andrea Harber\\\",\\n    \\\"checking\\\": 63436544,\\n    \\\"routing\\\": 67511746\\n}\""
+										},
+										"url": {
+											"raw": "{{baseUrl}}/payments/:accountNumber/payees/add",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"payments",
+												":accountNumber",
+												"payees",
+												"add"
+											],
+											"variable": [
+												{
+													"key": "accountNumber",
+													"value": "do pariatur fugiat esse",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"payeeId\": \"144826f8-43cf-4c78-a604-9f53fccec819\"\n}"
+								}
+							]
+						}
+					],
+					"id": "9123a8da-e9ea-4527-948a-e60ac862592f"
+				},
+				{
+					"name": "limits",
+					"item": [
+						{
+							"name": "Current",
+							"id": "c002b965-644c-4152-ad0e-177aae552baa",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/payments/:accountNumber/limits",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										":accountNumber",
+										"limits"
+									],
+									"variable": [
+										{
+											"id": "b75653e1-2187-4bac-b220-c328eb9b3d4d",
+											"key": "accountNumber",
+											"value": "do pariatur fugiat esse",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "1a096b0f-b187-41ff-9290-6143d8c97098",
+									"name": "response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/payments/:accountNumber/limits",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"payments",
+												":accountNumber",
+												"limits"
+											],
+											"variable": [
+												{
+													"key": "accountNumber",
+													"value": "do pariatur fugiat esse",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"daily\": 30000\n}"
+								}
+							]
+						},
+						{
+							"name": "Update",
+							"id": "9294fa3d-7ffb-4677-ba02-fef22ddb4119",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"daily\": 30000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/payments/:accountNumber/limits",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										":accountNumber",
+										"limits"
+									],
+									"variable": [
+										{
+											"id": "992b3166-7497-4a62-96bf-0de663384244",
+											"key": "accountNumber",
+											"value": "do pariatur fugiat esse",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "b1067777-3641-454f-a7c0-1d81e702230f",
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"daily\": 30000\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/payments/:accountNumber/limits",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"payments",
+												":accountNumber",
+												"limits"
+											],
+											"variable": [
+												{
+													"key": "accountNumber",
+													"value": "do pariatur fugiat esse",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"status\": \"success\"\n}"
+								}
+							]
+						}
+					],
+					"id": "0c278101-c90a-4a66-950c-eef35ec2fa47"
+				},
+				{
+					"name": "Transfer",
+					"id": "1049628d-4c85-4ad8-8f59-afc5026e9afe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"payeeId\": \"eea58966-aff3-4631-aefe-a6247b4be10d\",\n  \"amount\": \"184.92\",\n  \"reference\": \"Aut id aliquid.\",\n  \"date\": \"Mon Nov 01 2021 23:21:49 GMT-0400 (Eastern Daylight Time)\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/payments/:accountNumber/transfer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"payments",
+								":accountNumber",
+								"transfer"
+							],
+							"variable": [
+								{
+									"id": "0c819306-a4e7-47b7-8eb4-1c669574c275",
+									"key": "accountNumber",
+									"value": "do pariatur fugiat esse",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "1f44d256-36ad-4f06-a1ec-1ac665c1f768",
+							"name": "response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"payeeId\": \"eea58966-aff3-4631-aefe-a6247b4be10d\",\n  \"amount\": \"184.92\",\n  \"reference\": \"Aut id aliquid.\",\n  \"date\": \"Mon Nov 01 2021 23:21:49 GMT-0400 (Eastern Daylight Time)\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/payments/:accountNumber/transfer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										":accountNumber",
+										"transfer"
+									],
+									"variable": [
+										{
+											"key": "accountNumber",
+											"value": "do pariatur fugiat esse",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"transaction\": \"complete\"\n}"
+						}
+					]
+				}
+			],
+			"id": "fddd3751-6524-4ae1-a7dc-2d5d2dc613c8"
+		},
+		{
+			"name": "New user",
+			"id": "3f6e8e06-d5e7-47f4-8129-30c19d1e8bc2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json; charset=utf-8"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Kaley",
+							"description": "(Required) The user's first name (required)"
+						},
+						{
+							"key": "lastName",
+							"value": "Klein",
+							"description": "(Required) The user's last name (required)"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/create",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"create"
+					]
+				},
+				"description": "Creates a new user in the system. The user will be assigned an ID automatically. This can be found in the response."
+			},
+			"response": [
+				{
+					"id": "9a1eefe4-e850-4eb4-b267-b90f06b8b610",
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"description": "(Required) The user's first name (required)",
+									"key": "firstName",
+									"value": "Kaley"
+								},
+								{
+									"description": "(Required) The user's last name (required)",
+									"key": "lastName",
+									"value": "Klein"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"key": "X-Powered-By",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Content-Length",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "ETag",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Date",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Connection",
+							"value": "",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"status\": \"success\",\n  \"firstName\": \"Ben\",\n  \"lastName\": \"Smith\",\n  \"id\": \"0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all users",
+			"id": "577fc154-2dbc-4d8c-ba88-0f2fab0d766d",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "key",
+						"value": "{{key}}"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json; charset=utf-8"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/get?all=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "all",
+							"value": "true",
+							"description": "(Required) "
+						}
+					]
+				},
+				"description": "Get all users in the system."
+			},
+			"response": [
+				{
+					"id": "0f0b906f-b45a-4903-a7c6-16b649345cca",
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "key",
+								"value": "{{key}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/get?all=true",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "all",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"key": "X-Powered-By",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Content-Length",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "ETag",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Date",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Connection",
+							"value": "",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n  {\n    \"status\": \"success\"\n  },\n  {\n    \"firstName\": \"Ben\",\n    \"lastName\": \"Smith\",\n    \"id\": \"0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7\"\n  }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update user",
+			"id": "2ddc8daa-494a-46be-ba52-2148db8db149",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json; charset=utf-8"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Benjamin",
+							"description": "(Required) The user's new first name"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/update?id={{id}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "{{id}}",
+							"description": "(Required) The user's ID (required)"
+						}
+					]
+				},
+				"description": "Send the keys that you'd like to update, this can be one or more of `firstName`, `lastName` and `password`."
+			},
+			"response": [
+				{
+					"id": "77497543-cd27-4252-a38c-097856df9d8a",
+					"name": "OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"description": "(Required) The user's new first name",
+									"key": "firstName",
+									"value": "Benjamin"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/update?id={{id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"key": "X-Powered-By",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Content-Length",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "ETag",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Date",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Connection",
+							"value": "",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"status\": \"success\",\n  \"firstName\": \"Benjamin\",\n  \"lastName\": \"Smith\",\n  \"id\": \"0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete user",
+			"id": "1fa5a7fc-15da-4e9b-b76f-a0abec4d4e73",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json; charset=utf-8"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/delete?id={{id}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "{{id}}",
+							"description": "(Required) The user's ID"
+						}
+					]
+				},
+				"description": "Deletes a user from the system by `id`."
+			},
+			"response": [
+				{
+					"id": "b452b969-7fb4-4d1b-a49b-dcff077c9a08",
+					"name": "OK",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Content-Type",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/delete?id={{id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"key": "X-Powered-By",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Content-Length",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "ETag",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Date",
+							"value": "",
+							"description": ""
+						},
+						{
+							"disabled": false,
+							"key": "Connection",
+							"value": "",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"status\": \"success\",\n  \"id\": \"0729d37c-ef9f-4ffa-8f71-a6eedf1f95b7\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "3a64147e-e6c1-4ee7-b58d-f9136804ecb4",
+			"key": "baseUrl",
+			"value": "http://example.com",
+			"type": "string"
+		}
+	]
+}
