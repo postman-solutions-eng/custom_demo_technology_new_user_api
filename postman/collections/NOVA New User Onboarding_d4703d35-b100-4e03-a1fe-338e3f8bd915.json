@@ -849,6 +849,20 @@
 		},
 		{
 			"name": "New user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3c31df44-afdd-48c6-8ce2-5463cefb8a8c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "3f6e8e06-d5e7-47f4-8129-30c19d1e8bc2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -976,6 +990,20 @@
 		},
 		{
 			"name": "Get all users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70c418e9-784a-4f18-8780-964bb99d28dd",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "577fc154-2dbc-4d8c-ba88-0f2fab0d766d",
 			"request": {
 				"method": "GET",
@@ -1084,6 +1112,20 @@
 		},
 		{
 			"name": "Update user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2e6c6ce2-6797-415c-8f31-c8e103da9bf0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "2ddc8daa-494a-46be-ba52-2148db8db149",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -1214,6 +1256,20 @@
 		},
 		{
 			"name": "Delete user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3978b771-78e6-4262-9f9f-ec9358410530",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "1fa5a7fc-15da-4e9b-b76f-a0abec4d4e73",
 			"request": {
 				"method": "DELETE",
