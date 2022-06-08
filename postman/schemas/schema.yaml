@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "NOVA New User Onboarding",
+    "title": "NOVA New User Onboarding - v1",
     "contact": {},
     "version": "1.0"
   },
@@ -433,7 +433,7 @@
         "tags": [
           "Read"
         ],
-        "summary": "Get all users",
+        "summary": "Retrieve all users",
         "description": "Get all users in the system.",
         "operationId": "Getallusers",
         "parameters": [
